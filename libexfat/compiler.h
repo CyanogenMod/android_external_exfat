@@ -24,7 +24,7 @@
 #ifndef COMPILER_H_INCLUDED
 #define COMPILER_H_INCLUDED
 
-#if __STDC_VERSION__ < 199901L
+#if defined(__STDC_VERSION__) && (__STDC_VERSION__ < 199901L)
 #error C99-compliant compiler is required
 #endif
 
