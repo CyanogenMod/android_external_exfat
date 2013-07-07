@@ -38,7 +38,7 @@
 #define __LITTLE_ENDIAN LITTLE_ENDIAN
 #define __BIG_ENDIAN BIG_ENDIAN
 
-#elif defined(__FreeBSD__) || defined(__DragonFlyBSD__) || defined(__NetBSD__)
+#elif defined(__ANDROID__) || defined(__FreeBSD__) || defined(__DragonFlyBSD__) || defined(__NetBSD__)
 
 #include <sys/endian.h>
 #define bswap_16(x) bswap16(x)
