@@ -18,6 +18,7 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <exfat.h>
 #include <sys/types.h>
 #include <sys/time.h>
 #include <unistd.h>
@@ -25,7 +26,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
-#include <exfat.h>
 #include "mkexfat.h"
 #include "vbr.h"
 #include "fat.h"

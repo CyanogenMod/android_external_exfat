@@ -9,8 +9,8 @@ LOCAL_SRC_FILES =  main.c
 LOCAL_C_INCLUDES += $(LOCAL_PATH) \
 					external/exfat/libexfat \
 					external/fuse/include
-LOCAL_SHARED_LIBRARIES += libz libc libexfat libdl 
-LOCAL_STATIC_LIBRARIES += libfuse
+LOCAL_SHARED_LIBRARIES += libz libc libdl
+LOCAL_STATIC_LIBRARIES += libexfat libfuse
 
 include $(BUILD_EXECUTABLE)
 

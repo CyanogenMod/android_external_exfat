@@ -18,9 +18,9 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <exfat.h>
 #include <stdio.h>
 #include <string.h>
-#include <exfat.h>
 #include <exfatfs.h>
 #include <inttypes.h>
 #include <unistd.h>

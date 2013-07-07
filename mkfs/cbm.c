@@ -18,11 +18,11 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <limits.h>
 #include "cbm.h"
 #include "fat.h"
 #include "uct.h"
 #include "rootdir.h"
+#include <limits.h>
 
 static off_t cbm_alignment(void)
 {

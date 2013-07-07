@@ -9,4 +9,4 @@ LOCAL_SRC_FILES = cluster.c io.c log.c lookup.c mount.c node.c time.c utf.c util
 LOCAL_C_INCLUDES += $(LOCAL_PATH) \
 LOCAL_SHARED_LIBRARIES += libc
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)

@@ -18,11 +18,11 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <string.h>
 #include "rootdir.h"
 #include "uct.h"
 #include "cbm.h"
 #include "uctc.h"
+#include <string.h>
 
 static off_t rootdir_alignment(void)
 {

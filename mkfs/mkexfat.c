@@ -18,12 +18,12 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include "mkexfat.h"
 #include <sys/types.h>
 #include <unistd.h>
 #include <inttypes.h>
 #include <stdio.h>
 #include <string.h>
-#include "mkexfat.h"
 
 static int check_size(off_t volume_size)
 {
