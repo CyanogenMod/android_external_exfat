@@ -397,7 +397,7 @@ static char* add_fuse_options(char* options, const char* spec)
 	return options;
 }
 
-int main(int argc, char* argv[])
+int mount_exfat_main(int argc, char* argv[])
 {
 	struct fuse_args mount_args = FUSE_ARGS_INIT(0, NULL);
 	struct fuse_args newfs_args = FUSE_ARGS_INIT(0, NULL);
@@ -528,7 +528,7 @@ int main(int argc, char* argv[])
 	}
 
 	/* go to background (unless "-d" option is passed) and run FUSE
-	   main loop */
+		main loop */
 	if (fuse_daemonize(debug) == 0)
 	{
 		if (fuse_loop(fh) != 0)
