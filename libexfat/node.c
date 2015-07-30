@@ -559,7 +559,13 @@ int exfat_flush_node(struct exfat* ef, struct exfat_node* node)
 	loff_t offset;
 	loff_t meta1_offset, meta2_offset;
 	struct exfat_entry_meta1 meta1;
-	struct exfat_entry_meta2 meta2;
+	struct exfat_entry_meta2 meta2;g
+
+	if (!node)
+	{
+		exfat_error("exfat_flush_node received NULL node");
+		return 0; /* cannot flush without node info */
+	}
 
 	if (!(node->flags & EXFAT_ATTRIB_DIRTY))
 		return 0; /* no need to flush */
