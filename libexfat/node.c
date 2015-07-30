@@ -561,6 +561,12 @@ int exfat_flush_node(struct exfat* ef, struct exfat_node* node)
 	struct exfat_entry_meta1 meta1;
 	struct exfat_entry_meta2 meta2;
 
+	if (!node) 
+	{
+		exfat_error("exfat_flush_node received NULL node");
+		return 0;
+	}
+
 	if (!(node->flags & EXFAT_ATTRIB_DIRTY))
 		return 0; /* no need to flush */
 
