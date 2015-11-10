@@ -24,7 +24,11 @@
 #ifndef EXFAT_H_INCLUDED
 #define EXFAT_H_INCLUDED
 
+#if defined(__ANDROID__)
 #include "android_config.h"
+#else
+#include "config.h"
+#endif
 #include "compiler.h"
 #include "exfatfs.h"
 #include <stdio.h>
