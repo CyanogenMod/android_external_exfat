@@ -24,7 +24,7 @@
 #ifndef EXFAT_H_INCLUDED
 #define EXFAT_H_INCLUDED
 
-#include "config.h"
+#include "android_config.h"
 #include "compiler.h"
 #include "exfatfs.h"
 #include <stdio.h>
