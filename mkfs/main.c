@@ -26,6 +26,7 @@
 #include "cbm.h"
 #include "uct.h"
 #include "rootdir.h"
+#include <utf.h>
 #include <exfat.h>
 #include <sys/types.h>
 #include <sys/time.h>

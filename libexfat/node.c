@@ -21,6 +21,7 @@
 */
 
 #include "exfat.h"
+#include "utf.h"
 #include <errno.h>
 #include <string.h>
 #include <inttypes.h>

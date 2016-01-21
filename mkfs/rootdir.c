@@ -24,6 +24,7 @@
 #include "uct.h"
 #include "cbm.h"
 #include "uctc.h"
+#include <utf.h>
 #include <string.h>
 
 static off_t rootdir_alignment(void)
