@@ -84,7 +84,7 @@ le16_t exfat_calc_checksum(const struct exfat_entry_meta1* meta1,
 	checksum = exfat_add_checksum(meta2, checksum);
 	for (i = 0; i < name_entries; i++)
 	{
-		struct exfat_entry_name name_entry = {EXFAT_ENTRY_FILE_NAME, 0};
+		struct exfat_entry_name name_entry = {EXFAT_ENTRY_FILE_NAME, 0, {} };
 		memcpy(name_entry.name, name + i * EXFAT_ENAME_MAX,
 				MIN(EXFAT_ENAME_MAX, EXFAT_NAME_MAX - i * EXFAT_ENAME_MAX) *
 				sizeof(le16_t));

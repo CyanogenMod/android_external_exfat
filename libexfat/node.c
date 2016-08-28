@@ -942,7 +942,7 @@ static int write_entry(struct exfat* ef, struct exfat_node* dir,
 	}
 	for (i = 0; i < name_entries; i++)
 	{
-		struct exfat_entry_name name_entry = {EXFAT_ENTRY_FILE_NAME, 0};
+		struct exfat_entry_name name_entry = {EXFAT_ENTRY_FILE_NAME, 0, {} };
 		memcpy(name_entry.name, node->name + i * EXFAT_ENAME_MAX,
 				MIN(EXFAT_ENAME_MAX, EXFAT_NAME_MAX - i * EXFAT_ENAME_MAX) *
 				sizeof(le16_t));
@@ -1090,7 +1090,7 @@ static int rename_entry(struct exfat* ef, struct exfat_node* dir,
 
 	for (i = 0; i < name_entries; i++)
 	{
-		struct exfat_entry_name name_entry = {EXFAT_ENTRY_FILE_NAME, 0};
+		struct exfat_entry_name name_entry = {EXFAT_ENTRY_FILE_NAME, 0, {} };
 		memcpy(name_entry.name, name + i * EXFAT_ENAME_MAX,
 				EXFAT_ENAME_MAX * sizeof(le16_t));
 		if (!next_entry(ef, dir, &new_cluster, &new_offset))
