@@ -3,7 +3,7 @@
 #	Autoconf source.
 #
 #	Free exFAT implementation.
-#	Copyright (C) 2010-2015  Andrew Nayenko
+#	Copyright (C) 2010-2016  Andrew Nayenko
 #
 #	This program is free software; you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -21,11 +21,11 @@
 #
 
 AC_INIT([Free exFAT implementation],
-	[1.2.3],
+	[1.2.4],
 	[relan@users.noreply.github.com],
 	[exfat],
 	[https://github.com/relan/exfat])
-AM_INIT_AUTOMAKE([1.11.2 -Wall -Werror foreign subdir-objects no-installman])
+AM_INIT_AUTOMAKE([1.11.2 -Wall -Werror foreign subdir-objects])
 AC_PROG_CC
 AC_PROG_CC_C99
 AC_PROG_RANLIB

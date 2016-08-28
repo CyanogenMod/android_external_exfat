@@ -3,7 +3,7 @@
 	exFAT file system implementation library.
 
 	Free exFAT implementation.
-	Copyright (C) 2010-2015  Andrew Nayenko
+	Copyright (C) 2010-2016  Andrew Nayenko
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -376,5 +376,4 @@ void exfat_unmount(struct exfat* ef)
 	ef->sb = NULL;
 	free(ef->upcase);
 	ef->upcase = NULL;
-	ef->upcase_chars = 0;
 }

@@ -4,7 +4,7 @@
 	implementation.
 
 	Free exFAT implementation.
-	Copyright (C) 2010-2015  Andrew Nayenko
+	Copyright (C) 2010-2016  Andrew Nayenko
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -101,8 +101,7 @@ struct exfat
 {
 	struct exfat_dev* dev;
 	struct exfat_super_block* sb;
-	le16_t* upcase;
-	size_t upcase_chars;
+	uint16_t* upcase;
 	struct exfat_node* root;
 	struct
 	{
